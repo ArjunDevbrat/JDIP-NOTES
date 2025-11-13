@@ -1,12 +1,10 @@
-
 require("dotenv").config();
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
+const User = require("../models/User");  // ✅ FIXED (Capital U)
 
 const router = express.Router();
-
 
 router.post("/register", async (req, res) => {
   try {
@@ -16,16 +14,13 @@ router.post("/register", async (req, res) => {
       return res.status(400).json({ error: "Please fill all fields." });
     }
 
-    
     const existing = await User.findOne({ email });
     if (existing) {
       return res.status(400).json({ error: "Email already registered." });
     }
 
-
     const hashed = await bcrypt.hash(password, 10);
 
-    
     const user = new User({
       username,
       email,
@@ -35,7 +30,6 @@ router.post("/register", async (req, res) => {
 
     await user.save();
 
-   
     const token = jwt.sign(
       { id: user._id, username: user.username },
       process.env.JWT_SECRET || "testsecret",
@@ -57,9 +51,6 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// =======================
-// 🔹 LOGIN (verified user)
-// =======================
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
