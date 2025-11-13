@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/User");  // ✅ FIXED (Capital U)
+const User = require("../models/tempUser");  // ✅ FIXED (Capital U)
 
 const router = express.Router();
 

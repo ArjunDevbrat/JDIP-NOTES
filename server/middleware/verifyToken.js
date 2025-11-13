@@ -1,6 +1,6 @@
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');  // ✅ FIXED (Capital U)
+const User = require('../models/tempUser');  // ✅ FIXED (Capital U)
 
 module.exports = async (req, res, next) => {
   try {
