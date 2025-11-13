@@ -1,0 +1,134 @@
+
+
+
+body {
+  background: linear-gradient(to bottom right, #00264d, #004080, #0073e6);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bg-jdip {
+  background-color: #003366 !important; /* Dark Blue for JDIP */
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, #003366, #0059b3);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+
+.navbar .jdip-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.navbar .jdip-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #003366 0%, #28a745 100%); /* Blue to Green */
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.notes-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+
+.btn-jdip {
+  background-color: #0059b3;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  padding: 8px 18px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+.btn-jdip:hover {
+  background-color: #0073e6;
+}
+
+
+.btn {
+  border-radius: 25px;
+}
+
+
+input, select, textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  outline: none;
+}
+input:focus, textarea:focus {
+  border-color: #0059b3;
+  box-shadow: 0 0 5px #0059b3;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
